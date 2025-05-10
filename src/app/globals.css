@@ -7,6 +7,7 @@
   --GREY: rgba(153, 153, 153, 1);
   --gradient-mobile: to bottom, #9C9C9C, #D45F38, #7C361E, #000000;
   --gradient-desktop: to bottom, #9C9C9C, #D45F38, #7C361E, #484848;
+  --nav-height: 115px;
 }
 
 
@@ -32,4 +33,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   /* font-family: "Baunk", Helvetica, sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
 }

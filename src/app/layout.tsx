@@ -11,7 +11,7 @@ const baunk = localFont({
 });
 
 const notoSansTc = Noto_Sans_TC({
-  weight: ["400", "500"], // 可選: 100–900
+  weight: ["400", "500", "700"], // 可選: 100–900
   subsets: ["latin"], // Google Fonts 沒有提供 traditional-chinese subset，選 'latin' 即可生效
   variable: "--font-noto-sans-tc",
   display: "swap",
