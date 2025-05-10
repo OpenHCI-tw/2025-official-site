@@ -65,7 +65,7 @@ export default function Dropdown({
 
       {/* Dropdown 主體 */}
       <div className={dropdownClass}>
-        <div className="flex flex-col items-end md:items-start justify-center py-7 px-8 gap-6 h-[384px] md:h-[328px]">
+        <div className="flex flex-col items-end md:items-start justify-center py-7 px-16 md:px-8 gap-6 h-[384px] md:h-[328px]">
           {links.map(({ href, label }) => (
             <a
               key={href}
