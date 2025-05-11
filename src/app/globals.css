@@ -7,7 +7,7 @@
   --GREY: rgba(153, 153, 153, 1);
   --gradient-mobile: to bottom, #9C9C9C, #D45F38, #7C361E, #000000;
   --gradient-desktop: to bottom, #9C9C9C, #D45F38, #7C361E, #484848;
-  --nav-height: 115px;
+  --nav-height: 100px;
 }
 
 
@@ -22,12 +22,7 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
@@ -57,5 +52,25 @@ html {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+
+
+@utility scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
+
+/* .scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+} */
+
+@media screen and (max-width:768px) {
+  :root {
+    --nav-height: 80px;
+
   }
 }

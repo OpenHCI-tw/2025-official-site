@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function WorkshopIntro() {
   return (
-    <div className="text-base text-white py-16 text-justify md:max-w-[800px]">
+    <div className="text-base text-white py-16 text-justify md:max-w-[800px] tracking-[1.6px]">
       <div className="flex flex-col gap-20 space-y-16 mx-auto md:text-base leading-relaxed">
         <div className="flex flex-col gap-3">
           <h3
@@ -18,7 +18,7 @@ export default function WorkshopIntro() {
             height={200}
             className="w-full h-auto mb-4"
           />
-          <p>
+          <p className="">
             Agency
             是我們在環境中行動與決策的能力。在疫苗、蒸汽機、網際網路的時代，這個詞就已被重新定義一次。
             而如今，當 AI

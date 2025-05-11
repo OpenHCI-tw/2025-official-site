@@ -10,7 +10,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-black text-xl flex  flex-col items-center justify-center py-10 px-8">
+    <footer className="bg-black text-xl flex  flex-col items-center justify-center py-10 px-8 text-white">
       <div className="grid md:grid-cols-2 gap-7 pt-10 pb-20 ">
         <div className="border rounded hidden md:block z-30">
           <iframe

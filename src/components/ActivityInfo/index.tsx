@@ -1,7 +1,7 @@
 export default function ActivityInfo() {
   return (
-    <div className="text-white py-16 mx-auto w-full md:max-w-[800px]">
-      <div className="flex flex-col gap-3 mx-auto">
+    <div className="text-white py-16 mx-auto w-full  z-20 pointer-events-none tracking-[1.6px]">
+      <div className="flex flex-col gap-3 mx-auto md:max-w-[864px] px-10">
         <h3
           className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-full after:bg-gradient-to-r after:from-white after:to-transparent"
           style={{ textShadow: "0px 4px 5px #00000040" }}
@@ -10,23 +10,78 @@ export default function ActivityInfo() {
         </h3>
         <div className="relative flex justify-between text-sm after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30">
           <span>前置作坊</span>
-          <span>2025/06/21 (六) - 06/22 (日) </span>
+          <span>2025/06/28 (六) - 06/29 (日) </span>
         </div>
         <div className="relative flex justify-between text-sm  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30">
           <span>正式工作坊</span>
-          <span>2025/06/21 (六) - 06/22 (日) </span>
+          <span>2025/7/17 (四) - 07/20 (日) </span>
         </div>
       </div>
 
-      <div className="overflow-x-auto mx-auto my-12 px-4">
-        <div className="flex gap-4">
-          <div className="w-[395px] h-[498px] bg-[#D9D9D9] shrink-0"></div>
-          <div className="w-[395px] h-[498px] bg-[#D9D9D9] shrink-0"></div>
-          <div className="w-[395px] h-[498px] bg-[#D9D9D9] shrink-0"></div>
-        </div>
+      <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60 scrollbar-hidden  pointer-events-auto">
+        <InfoCard
+          name="前置工作坊"
+          date="6/28 (六)"
+          list={[
+            "晶創計畫介紹",
+            "必選修課程",
+            "未來學/推測設計課程",
+            "學員討論",
+          ]}
+        />
+        <InfoCard
+          name="前置工作坊"
+          date="6/29 (日)"
+          list={[
+            "晶創計畫介紹",
+            "必選修課程",
+            "未來學/推測設計課程",
+            "學員討論",
+          ]}
+        />
+        <InfoCard
+          name="正式工作坊"
+          date="7/17 (日)"
+          list={[
+            "晶創計畫介紹",
+            "必選修課程",
+            "未來學/推測設計課程",
+            "學員討論",
+          ]}
+        />
+        <InfoCard
+          name="正式工作坊"
+          date="7/18 (日)"
+          list={[
+            "晶創計畫介紹",
+            "必選修課程",
+            "未來學/推測設計課程",
+            "學員討論",
+          ]}
+        />
+        <InfoCard
+          name="正式工作坊"
+          date="7/19 (六)"
+          list={[
+            "晶創計畫介紹",
+            "必選修課程",
+            "未來學/推測設計課程",
+            "學員討論",
+          ]}
+        />
+        <InfoCard
+          name="正式工作坊"
+          date="7/20 (日)"
+          list={[
+            "晶創計畫介紹",
+            "必選修課程",
+            "未來學/推測設計課程",
+            "學員討論",
+          ]}
+        />
       </div>
 
-      <div className="flex flex-col gap-20 mx-auto leading-relaxed">
+      <div className="flex flex-col gap-20 mx-auto leading-relaxed md:max-w-[864px] px-10 ">
         <InfoBlock
           title="地點"
           content="台大卓越創新大樓 (100台北市中正區思源街18號)"
@@ -45,22 +100,22 @@ export default function ActivityInfo() {
         />
       </div>
 
-      <div className="mt-16">
+      <div className="mt-16 md:max-w-[864px] px-10 mx-auto">
         <h4
           className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-1 after:w-full after:bg-white"
           style={{ textShadow: "0px 4px 5px #00000040" }}
         >
           招生日程
         </h4>
-        <div className="w-full max-w-[800px] mx-auto px-4 mt-16">
+        <div className="w-full max-w-[800px] mx-auto px-0 md:px-4 mt-16">
           <div className="relative w-full origin-top-left scale-100 sm:scale-95 xs:scale-[0.85]">
-            <div className="absolute top-[13px] left-0 right-0 h-[12px] bg-gradient-to-r from-transparent via-white to-transparent z-0" />
+            <div className="absolute top-[13px] left-0 right-0 h-[12px] scale-y-50 md:scale-y-100 bg-gradient-to-r from-transparent via-white to-transparent z-0" />
 
-            <div className="grid grid-cols-4 gap-2 z-10">
-              <Step date="6/24" label="報名開始" />
-              <Step date="6/24" label="報名結束" />
-              <Step date="6/24" label="錄取名單公布" />
-              <Step date="6/24" label="遞補備取通知" />
+            <div className="grid grid-cols-4 gap-2 z-10 text-center">
+              <Step date="5/16" label="報名開始" />
+              <Step date="5/28" label="報名結束" />
+              <Step date="6/11" label="錄取名單公布" />
+              <Step date="6/14" label="遞補備取通知" />
             </div>
           </div>
         </div>
@@ -69,6 +124,30 @@ export default function ActivityInfo() {
   );
 }
 
+function InfoCard({
+  name,
+  date,
+  list,
+}: {
+  name: string;
+  date: string;
+  list: string[];
+}) {
+  return (
+    <div className="p-10 bg-[rgba(153,153,153,1)] flex flex-col items-center gap-3 shrink-0 drop-shadow-[4px_4px_8px_rgba(0,0,0,0.25)]">
+      <div className="flex flex-col gap-1 font-bold self-start">
+        <span className="text-2xl ">{name}</span>
+        <span className="text-xl">{date}</span>
+      </div>
+      <div className="bg-gradient-to-r from-white via-transparent to-transparent w-[218px] h-0.5"></div>
+      <ul className="list-disc">
+        {list.map((item) => (
+          <li key={`date` + item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 function InfoBlock({ title, content }: { title: string; content: string }) {
   return (
     <div>
@@ -78,7 +157,7 @@ function InfoBlock({ title, content }: { title: string; content: string }) {
       >
         {title}
       </h4>
-      <p className="mt-4 leading-6 tracking-[10%]">{content}</p>
+      <p className="mt-4 leading-6 tracking-[1.6px]">{content}</p>
     </div>
   );
 }
@@ -86,9 +165,9 @@ function InfoBlock({ title, content }: { title: string; content: string }) {
 function Step({ date, label }: { date: string; label: string }) {
   return (
     <div className="relative flex flex-col items-center z-10">
-      <div className="w-[38px] h-[38px] bg-white rounded-full mb-2"></div>
-      <div className="font-medium text-2xl mt-3">{date}</div>
-      <div className="font-medium text-base mt-2">{label}</div>
+      <div className="w-[18px] h-[18px] translate-y-2.5 md:translate-y-0 md:w-[38px] md:h-[38px] bg-white rounded-full mb-2"></div>
+      <div className="md:font-medium text-2xl mt-3">{date}</div>
+      <div className="md:font-medium text-base mt-2">{label}</div>
     </div>
   );
 }

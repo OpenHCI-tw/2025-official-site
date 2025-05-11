@@ -234,7 +234,7 @@ export default function Stones({
       ref={containerRef}
       className="absolute inset-0 overflow-hidden bg-transparent pointer-events-none z-10"
       onMouseMove={handleMouseMove}
-      onTouchMove={handleTouchMove}
+      onTouchStart={handleTouchMove}
       // style={{ touchAction: "none" }}
     >
       {stones.map((stone) => (

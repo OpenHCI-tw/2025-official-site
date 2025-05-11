@@ -24,11 +24,11 @@ export default function MemberCard({ member, department }: MemberCardProps) {
           fill
           className="object-cover object-[50%_10%]"
         />
-        <div className="name absolute bg-orange right-0 bottom-0 p-1.5 text-xl">
+        <div className="name absolute bg-orange right-0 bottom-0 p-1.5 text-xl text-white">
           {member.name}
         </div>
       </div>
-      <div className="pl-3 pt-4 text-[16px] bg-grey tracking-[0.1em]">
+      <div className="pl-3 pt-4 text-[16px] bg-grey tracking-[0.1em] text-white">
         <p>{member.school}</p>
         <p>{member.expertise}</p>
       </div>

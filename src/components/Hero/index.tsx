@@ -6,7 +6,7 @@ export default function Hero() {
       className="relative w-full text-white overflow-hidden"
       style={{ height: "calc(100vh - 115px)" }}
     >
-      <div className="absolute inset-0 bg-[url('/hero/background.png')] bg-cover bg-[right_-20px_top] z-0" />
+      <div className="absolute inset-0 bg-[url('/hero/background_compressed.jpg')] bg-cover bg-[right_-20px_top] z-0" />
 
       <div className="relative z-10 flex flex-col px-6 py-8 h-full justify-center md:justify-between md:items-stretch md:ml-12 md:mt-12">
         <div className="flex flex-col flex-1 mt-12 md:mt-0 md:self-start">
