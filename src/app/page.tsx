@@ -6,9 +6,8 @@ import SponsorSection from "@/components/Sponsors/SponsorSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="relative">
       <Navbar />
-
       <header className=" border-2 flex flex-col items-center justify-center p-10 h-[calc(100dvh-var(--nav-height))] bg-orange">
         第十五屆人機互動工作坊 - Landing
       </header>
