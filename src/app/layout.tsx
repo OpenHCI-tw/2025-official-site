@@ -34,8 +34,8 @@ export default function RootLayout({
       <body
         className={`${baunk.variable} ${notoSansTc.variable} antialiased relative`}
       >
-        {children}
         <Stones />
+        {children}
       </body>
     </html>
   );

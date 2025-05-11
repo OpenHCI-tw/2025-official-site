@@ -19,9 +19,7 @@ export default function Home() {
           <Hero />
         </section>
 
-        <section
-          className="border-2 flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]"
-        >
+        <section className="border-2 flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]">
           <Intro />
         </section>
 
@@ -47,7 +45,6 @@ export default function Home() {
         >
           <NumberTitle number={3}>講座陣容</NumberTitle>
           <Speakers />
-
         </section>
 
         <section

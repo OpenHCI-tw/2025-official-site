@@ -11,8 +11,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-xl flex  flex-col items-center justify-center py-10 px-8">
-      <div className="grid md:grid-cols-2 gap-7 pt-10 pb-20">
-        <div className="border rounded hidden md:block">
+      <div className="grid md:grid-cols-2 gap-7 pt-10 pb-20 ">
+        <div className="border rounded hidden md:block z-30">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.5733421489876!2d121.52578452530939!3d25.014609727828976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96d81548897%3A0xea8b69a832961f94!2z6Ie65aSn5Ym15paw6Kit6KiI5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1746896497027!5m2!1szh-TW!2stw"
             className="w-full h-full"
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="info flex flex-col gap-3 items-center">
           <div className="social-media flex justify-center gap-3">
             {social_media.map(({ name, link }) => (
-              <a href={link} key={name}>
+              <a href={link} key={name} target="blank">
                 <Image
                   width={36}
                   height={36}
@@ -59,6 +59,7 @@ export default function Footer() {
                   <a
                     href={`https://www.${y}.openhci.com`}
                     className="underline"
+                    target="blank"
                   >
                     {y}
                   </a>

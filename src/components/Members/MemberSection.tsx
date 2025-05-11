@@ -49,9 +49,16 @@ export default function MemberSection() {
       </div>
 
       {/* 成員卡片區 */}
-      <div className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center">
+      <div
+        key={current}
+        className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center animate-fadeIn"
+      >
         {members.map((member, i) => (
-          <MemberCard key={`${team}-${member.name}-${i}`} member={member} />
+          <MemberCard
+            key={`${team}-${member.name}-${i}`}
+            member={member}
+            department={team}
+          />
         ))}
       </div>
     </div>
