@@ -1,0 +1,62 @@
+{
+  "講師": [
+    {
+      "name": "梁容輝",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    },
+    {
+      "name": "梁容輝2",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    },
+    {
+      "name": "梁容輝3",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    }
+  ],
+  "評審": [
+    {
+      "name": "梁容輝 評審",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    },
+    {
+      "name": "梁容輝 評審2",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    },
+    {
+      "name": "梁容輝 評審3",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    }
+  ],
+  "顧問": [
+    {
+      "name": "梁容輝 顧問",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    },
+    {
+      "name": "梁容輝 顧問2",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    },
+    {
+      "name": "梁容輝 顧問3",
+      "education": "國立台灣科技大學",
+      "field": "推測設計X互動設計",
+      "photo": "example.jpg"
+    }
+  ]
+}
