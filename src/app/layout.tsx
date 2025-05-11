@@ -32,10 +32,10 @@ export default function RootLayout({
   return (
     <html lang="zh-Hant">
       <body
-        className={`${baunk.variable} ${notoSansTc.variable} antialiased relative `}
+        className={`${baunk.variable} ${notoSansTc.variable} antialiased relative`}
       >
-        <Stones />
         {children}
+        <Stones />
       </body>
     </html>
   );

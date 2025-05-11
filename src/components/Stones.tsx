@@ -38,8 +38,8 @@ export default function Stones({
   minVelocity = 0.25,
   maxVelocity = 1,
   margin = 20,
-  stoneSize = [30, 80],
-  bounceDelta = 1,
+  stoneSize = [30, 100],
+  bounceDelta = 1.2,
   jitterDelta = 0.5,
 }: StonesProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -232,10 +232,10 @@ export default function Stones({
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 overflow-hidden bg-transparent z-10"
+      className="absolute inset-0 overflow-hidden bg-transparent pointer-events-none"
       onMouseMove={handleMouseMove}
       onTouchMove={handleTouchMove}
-      style={{ touchAction: "none" }}
+      // style={{ touchAction: "none" }}
     >
       {stones.map((stone) => (
         <div
@@ -250,6 +250,7 @@ export default function Stones({
             width: `${stone.size}px`,
             height: `${stone.size}px`,
             transition: "transform 0.3s ease",
+            pointerEvents: "auto",
           }}
         >
           <Image
