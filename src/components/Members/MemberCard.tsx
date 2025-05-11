@@ -14,7 +14,7 @@ type MemberCardProps = {
 
 export default function MemberCard({ member }: MemberCardProps) {
   return (
-    <div className="w-full aspect-[0.75] grid grid-rows-[3fr_1fr]">
+    <div className="w-full aspect-[0.75] grid grid-rows-[3fr_1fr] z-10">
       <div className="relative w-full aspect-square overflow-hidden tracking-[0.1em]">
         <Image
           src={`/幹部照片/${member.photo}`}

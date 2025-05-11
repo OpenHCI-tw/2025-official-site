@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import teamMembersJson from "@/data/teamMembers.json";
 import DepartmentTag from "./DepartmentTag";
@@ -31,7 +32,7 @@ export default function MemberSection() {
   };
 
   return (
-    <div className="grid gap-11 w-full px-8">
+    <div className="grid gap-11 w-full px-8 md:px-30">
       {/* 部門切換 */}
       <div className="departments flex flex-wrap justify-center gap-3 pb-8">
         {departments.map((name, index) => {

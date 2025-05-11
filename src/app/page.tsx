@@ -11,7 +11,7 @@ import Speakers from "@/components/Speakers";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="relative">
       <Navbar />
 
       <main className="flex flex-col gap-8 mb-8 bg-linear-(--gradient-mobile) md:bg-linear-(--gradient-desktop)">

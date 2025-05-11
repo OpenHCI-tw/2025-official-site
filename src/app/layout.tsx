@@ -3,6 +3,8 @@ import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 
 import localFont from "next/font/local";
+import Stones from "@/components/Stones";
+// import Stones from "@/components/Stones";
 
 const baunk = localFont({
   src: "./fonts/Baunk.ttf",
@@ -30,8 +32,9 @@ export default function RootLayout({
   return (
     <html lang="zh-Hant">
       <body
-        className={`${baunk.variable} ${notoSansTc.variable}  antialiased `}
+        className={`${baunk.variable} ${notoSansTc.variable} antialiased relative `}
       >
+        <Stones />
         {children}
       </body>
     </html>
