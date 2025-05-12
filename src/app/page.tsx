@@ -13,15 +13,13 @@ import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="">
       <Navbar />
-
+      <section className="">
+        <Hero />
+      </section>
       <main className="flex flex-col gap-8 mb-8 bg-linear-(--gradient-mobile) md:bg-linear-(--gradient-desktop)">
-        <section>
-          <Hero />
-        </section>
-
-        <section className="border-1 flex flex-col items-center justify-center py-20  scroll-mt-[var(--nav-height)]">
+        <section className="border-1 flex flex-col items-center justify-center py-20  scroll-mt-[var(--nav-height)]  bg-linear-(--gradient-intro)">
           <Intro />
         </section>
 
@@ -64,13 +62,15 @@ export default function Home() {
           <Faq />
         </section>
 
+        <NumberTitle number={6}>籌辦團隊</NumberTitle>
+
         <AnimatedSection
           className="border-1 flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)]"
           id="team-info"
           baseClass="fade-in-start"
           animationClass="fade-in-end"
+          once={true}
         >
-          <NumberTitle number={6}>籌辦團隊</NumberTitle>
           <MemberSection />
         </AnimatedSection>
 

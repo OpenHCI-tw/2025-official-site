@@ -1,6 +1,6 @@
 export default function ActivityInfo() {
   return (
-    <div className="text-white py-16 mx-auto w-full  z-20 pointer-events-none tracking-[1.6px]">
+    <div className="text-white py-16 mx-auto w-full z-20 pointer-events-none tracking-[1.6px]">
       <div className="flex flex-col gap-3 mx-auto md:max-w-[864px] px-10">
         <h3
           className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-full after:bg-gradient-to-r after:from-white after:to-transparent"
@@ -22,65 +22,53 @@ export default function ActivityInfo() {
         </div>
       </div>
 
-      <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60 scrollbar-hidden  pointer-events-auto">
+      <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60 scrollbar-hidden  pointer-events-auto pb-6">
         <InfoCard
           name="前置工作坊"
           date="6/28 (六)"
           list={[
-            "晶創計畫介紹",
-            "必選修課程",
-            "未來學/推測設計課程",
-            "學員討論",
+            "晶創人文介紹",
+            "HCI介紹",
+            "TA HiLight!",
+            "演講 : 梁榮輝",
+            "演講 : 孔博雯",
+            "Workshop Orientation",
           ]}
         />
         <InfoCard
           name="前置工作坊"
           date="6/29 (日)"
           list={[
-            "晶創計畫介紹",
-            "必選修課程",
-            "未來學/推測設計課程",
-            "學員討論",
+            "Arduino/推測設計與腦力風暴 (選修）",
+            "XR 論壇 / AI 論壇 (選修）",
+            "顧問交流",
+            "TouchDesigner / 社會科學研究方法 (選修）",
           ]}
         />
         <InfoCard
           name="正式工作坊"
           date="7/17 (日)"
-          list={[
-            "晶創計畫介紹",
-            "必選修課程",
-            "未來學/推測設計課程",
-            "學員討論",
-          ]}
+          list={["演講 : 曾元琦", "必選修課程", "期中提案", "學員討論"]}
         />
         <InfoCard
           name="正式工作坊"
           date="7/18 (日)"
-          list={[
-            "晶創計畫介紹",
-            "必選修課程",
-            "未來學/推測設計課程",
-            "學員討論",
-          ]}
+          list={["演講 : 吳哲宇", "留學分享 : 洪鵬凱", "學員討論"]}
         />
         <InfoCard
           name="正式工作坊"
           date="7/19 (六)"
-          list={[
-            "晶創計畫介紹",
-            "必選修課程",
-            "未來學/推測設計課程",
-            "學員討論",
-          ]}
+          list={["演講 : 曹筱玥", "學員討論"]}
         />
         <InfoCard
           name="正式工作坊"
           date="7/20 (日)"
           list={[
-            "晶創計畫介紹",
-            "必選修課程",
-            "未來學/推測設計課程",
             "學員討論",
+            "會場布置",
+            "期末發表",
+            "互動成果展示",
+            "頒獎＆閉幕式",
           ]}
         />
       </div>
@@ -88,7 +76,7 @@ export default function ActivityInfo() {
       <div className="flex flex-col gap-20 mx-auto leading-relaxed md:max-w-[864px] px-10 ">
         <InfoBlock
           title="地點"
-          content="台大卓越創新大樓 (100台北市中正區思源街18號)"
+          content="國立臺灣大學 水源校區卓越研究大樓（100台北市中正區思源街18號）"
         />
         <InfoBlock
           title="費用"
@@ -138,13 +126,13 @@ function InfoCard({
   list: string[];
 }) {
   return (
-    <div className="p-10 bg-[rgba(153,153,153,1)] flex flex-col items-center gap-3 shrink-0 drop-shadow-[4px_4px_8px_rgba(0,0,0,0.25)]">
+    <div className="p-10 w-[298px] h-[348px] bg-[rgba(153,153,153,1)] flex flex-col items-center gap-3 shrink-0 drop-shadow-[12px_12px_0px_rgba(0,0,0,0.5)]">
       <div className="flex flex-col gap-1 font-bold self-start">
         <span className="text-2xl ">{name}</span>
         <span className="text-xl">{date}</span>
       </div>
       <div className="bg-gradient-to-r from-white via-transparent to-transparent w-[218px] h-0.5"></div>
-      <ul className="list-disc">
+      <ul className="list-disc self-start pl-4">
         {list.map((item) => (
           <li key={`date` + item}>{item}</li>
         ))}

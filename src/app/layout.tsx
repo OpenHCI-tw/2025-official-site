@@ -22,6 +22,9 @@ const notoSansTc = Noto_Sans_TC({
 export const metadata: Metadata = {
   title: "OpenHCI 2025",
   description: "OpenHCI 2025",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

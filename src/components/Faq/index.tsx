@@ -22,13 +22,13 @@ export default function Faq() {
                   onClick={() => toggle(i)}
                 >
                   <div
-                    className="flex-1 font-bold text-[16px] leading-[24px] tracking-[0.1em] border-b border-white pb-4"
+                    className="flex-1 font-bold text-[16px] leading-[24px] tracking-[0.1em]"
                     style={{
                       fontFamily: "Noto Sans TC",
                       textShadow: "0px 4px 5px rgba(0,0,0,0.25)",
                     }}
                   >
-                    {item.question}
+                    Q. {item.question}
                   </div>
                   <svg
                     className={`w-6 h-6 transform transition-transform duration-300 ${
@@ -46,6 +46,7 @@ export default function Faq() {
                     />
                   </svg>
                 </button>
+                <div className="h-0.5 w-full bg-white mt-3"></div>
                 <div
                   className={`overflow-hidden transition-all duration-300 ${
                     open ? "max-h-40" : "max-h-0"

@@ -5,8 +5,20 @@
   --foreground: #000000;
   --ORANGE: #FF6633;
   --GREY: rgba(153, 153, 153, 1);
-  --gradient-mobile: to bottom, #9C9C9C, #D45F38, #7C361E, #000000;
-  --gradient-desktop: to bottom, #9C9C9C, #D45F38, #7C361E, #484848;
+  /* --gradient-mobile: to bottom, #9C9C9C, #D45F38, #7C361E, #000000;
+  --gradient-desktop: to bottom, #9C9C9C, #D45F38, #7C361E, #484848; */
+
+  --gradient-intro: to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%;
+
+  --gradient-desktop: to top, #484848 0.05%, #D34F22 83.62%, #9C9C9C 99.95%;
+
+  --gradient-mobile: to top, #000000 0.05%, #7C361E 66.58%, #D45F38 90.8%, #9C9C9C 99.95%;
+
+  /* --gradient-desktop: linear-gradient(0.05deg,
+      #484848 0.05%,
+      #D34F22 83.62%,
+      #9C9C9C 99.95%); */
+
   --nav-height: 100px;
 }
 
@@ -40,7 +52,10 @@ html {
 
 
 @theme {
-  --animate-fadeIn: fadeIn 0.5s ease-out;
+  --animate-fadeIn: fadeIn 0.5s ease-in-out forwards;
+  --animate-fadeInLeft: fadeInLeft 0.5s ease-in-out forwards;
+  --animate-fadeInRight: fadeInRight 0.5s ease-in-out forwards;
+
 
   @keyframes fadeIn {
     from {
@@ -51,6 +66,30 @@ html {
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }
@@ -66,8 +105,8 @@ html {
 @layer utilities {
   .fade-in-start {
     opacity: 0;
-    transform: translateY(10%);
-    transition: all 0.6s ease-in-out;
+    transform: translateY(12%);
+    transition: all 1s ease-in-out;
   }
 
   .fade-in-end {
@@ -77,8 +116,8 @@ html {
 
   .slide-in-left-start {
     opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.7s ease-out;
+    transform: translateX(-10%);
+    transition: all 0.8s ease-in-out;
   }
 
   .slide-in-left-end {
@@ -88,9 +127,9 @@ html {
 
   .slide-in-right-start {
     opacity: 0;
-    transform: translateX(2.5rem);
+    transform: translateX(10%);
     /* tailwind 的 translate-x-10 ≈ 2.5rem */
-    transition: all 0.7s ease-out;
+    transition: all 0.8s ease-in-out;
   }
 
   .slide-in-right-end {

@@ -2,8 +2,8 @@
 import { useState } from "react";
 import speakersJson from "@/data/speakers.json";
 import GroupTag from "./GroupTag";
-import SpeakerCard from "./SpeakerCard";
-import type { Speaker } from "./SpeakerCard";
+import NewSpeakerCard from "./NewSpeakerCard";
+import type { Speaker } from "./NewSpeakerCard";
 
 type Speakers = {
   [group: string]: Speaker[];
@@ -27,7 +27,6 @@ export default function Speakers() {
 
   return (
     <div className="grid gap-11 w-full px-8">
-
       <div className="departments flex flex-wrap justify-center gap-3 pb-8">
         {groups.map((name, index) => {
           const isActive = index === current;
@@ -44,7 +43,11 @@ export default function Speakers() {
 
       <div className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center">
         {speakers.map((speaker, i) => (
-          <SpeakerCard key={`${speaker.name}-${i}`} speaker={speaker} />
+          <NewSpeakerCard
+            key={`${speaker.name}-${i}`}
+            group={group}
+            speaker={speaker}
+          />
         ))}
       </div>
     </div>

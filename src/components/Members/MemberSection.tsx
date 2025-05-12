@@ -3,7 +3,6 @@
 import { useState } from "react";
 import teamMembersJson from "@/data/teamMembers.json";
 import DepartmentTag from "./DepartmentTag";
-import MemberCard from "./MemberCard";
 import NewMemberCard from "./NewMemberCard";
 type Member = {
   name: string;
@@ -52,13 +51,15 @@ export default function MemberSection() {
       {/* 成員卡片區 */}
       <div
         key={current}
-        className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center animate-fadeIn"
+        className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center "
       >
         {members.map((member, i) => (
           <NewMemberCard
             key={`${team}-${member.name}-${i}`}
             member={member}
             department={team}
+            className=""
+            index={i}
           />
         ))}
       </div>

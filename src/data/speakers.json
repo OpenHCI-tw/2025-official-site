@@ -1,62 +1,65 @@
 {
   "講師": [
     {
-      "name": "梁容輝",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "曹筱玥"
     },
     {
-      "name": "梁容輝2",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "孔博雯"
     },
     {
-      "name": "梁容輝3",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "吳哲宇"
+    },
+    {
+      "name": "洪鵬凱"
+    },
+    {
+      "name": "梁榮輝"
+    },
+    {
+      "name": "曾元琦"
     }
   ],
   "評審": [
     {
-      "name": "梁容輝 評審",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "林承毅"
     },
     {
-      "name": "梁容輝 評審2",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "簡瑋麒"
     },
     {
-      "name": "梁容輝 評審3",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "宋同正"
+    },
+    {
+      "name": "余能豪"
+    },
+    {
+      "name": "袁千雯"
+    },
+    {
+      "name": "陳宜秀"
+    },
+    {
+      "name": "蔡文傑"
     }
   ],
   "顧問": [
     {
-      "name": "梁容輝 顧問",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "畢南怡"
     },
     {
-      "name": "梁容輝 顧問2",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "侯宗佑"
     },
     {
-      "name": "梁容輝 顧問3",
-      "education": "國立台灣科技大學",
-      "field": "推測設計X互動設計",
-      "photo": "example.jpg"
+      "name": "張永儒"
+    },
+    {
+      "name": "蔡欣叡"
+    },
+    {
+      "name": "鄭宇婷"
+    },
+    {
+      "name": "韓秉軒"
     }
   ]
 }
