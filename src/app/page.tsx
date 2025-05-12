@@ -8,6 +8,7 @@ import Intro from "@/components/Intro/index";
 import WorkshopIntro from "@/components/WorkshopIntro";
 import ActivityInfo from "@/components/ActivityInfo";
 import Speakers from "@/components/Speakers";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
@@ -59,6 +60,7 @@ export default function Home() {
           id="faq"
         >
           <NumberTitle number={5}>FAQ</NumberTitle>
+          <Faq />
         </section>
 
         <section
