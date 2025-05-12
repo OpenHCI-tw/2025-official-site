@@ -8,13 +8,17 @@ export default function ActivityInfo() {
         >
           日程
         </h3>
-        <div className="relative flex justify-between text-sm after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30">
-          <span>前置作坊</span>
-          <span>2025/06/28 (六) - 06/29 (日) </span>
+        <div className="relative flex justify-between text-sm after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30 h-[44px] items-end">
+          <span className="text-[16px] self-start md:self-auto">
+            前置工作坊
+          </span>
+          <span className="">2025/06/28 (六) - 06/29 (日) </span>
         </div>
-        <div className="relative flex justify-between text-sm  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30">
-          <span>正式工作坊</span>
-          <span>2025/7/17 (四) - 07/20 (日) </span>
+        <div className="relative flex justify-between text-sm  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30 h-[44px] items-end">
+          <span className="text-[16px] self-start md:self-auto">
+            正式工作坊
+          </span>
+          <span className="">2025/7/17 (四) - 07/20 (日) </span>
         </div>
       </div>
 

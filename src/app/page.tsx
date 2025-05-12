@@ -8,6 +8,7 @@ import Intro from "@/components/Intro/index";
 import WorkshopIntro from "@/components/WorkshopIntro";
 import ActivityInfo from "@/components/ActivityInfo";
 import Speakers from "@/components/Speakers";
+import AnimatedSection from "@/components/AnimatedSection";
 import Faq from "@/components/Faq";
 
 export default function Home() {
@@ -63,13 +64,15 @@ export default function Home() {
           <Faq />
         </section>
 
-        <section
+        <AnimatedSection
           className="border-1 flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)]"
           id="team-info"
+          baseClass="fade-in-start"
+          animationClass="fade-in-end"
         >
           <NumberTitle number={6}>籌辦團隊</NumberTitle>
           <MemberSection />
-        </section>
+        </AnimatedSection>
 
         <section
           className=" border-1 flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]"

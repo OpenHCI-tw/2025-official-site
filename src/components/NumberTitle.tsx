@@ -11,7 +11,7 @@ function NumberTitle({ children, number }: Props) {
       <div className="col-start-1 row-start-1 font-baunk text-[124px] leading-[124px] opacity-30">
         0{number}
       </div>
-      <div className="col-start-1 row-start-1 text-[28px] leading-[28px] font-bold grid place-items-center pb-3">
+      <div className="col-start-1 row-start-1 text-[28px] leading-[28px] font-bold grid place-items-center pb-3 drop-shadow-[0px_4px_5px_rgba(0,0,0,0.25)]">
         {children}
       </div>
     </div>

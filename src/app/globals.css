@@ -63,6 +63,42 @@ html {
 
 }
 
+@layer utilities {
+  .fade-in-start {
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .fade-in-end {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .slide-in-left-start {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.7s ease-out;
+  }
+
+  .slide-in-left-end {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .slide-in-right-start {
+    opacity: 0;
+    transform: translateX(2.5rem);
+    /* tailwind 的 translate-x-10 ≈ 2.5rem */
+    transition: all 0.7s ease-out;
+  }
+
+  .slide-in-right-end {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 /* .scrollbar-hidden::-webkit-scrollbar {
   display: none;

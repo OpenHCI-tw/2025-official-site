@@ -25,7 +25,7 @@ function SponsorSection() {
           src="/贊助LOGO/政大數位.svg"
           alt="政大數位"
           fill
-          className="mix-blend-screen"
+          className="mix-blend-screen "
         />
       </div>
     </div>

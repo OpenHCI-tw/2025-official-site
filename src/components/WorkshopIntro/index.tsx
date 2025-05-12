@@ -16,7 +16,7 @@ export default function WorkshopIntro() {
             alt="topics"
             width={796}
             height={200}
-            className="w-full h-auto mb-4"
+            className="w-full h-auto mb-4 mix-blend-multiply"
           />
           <p className="">
             Agency
