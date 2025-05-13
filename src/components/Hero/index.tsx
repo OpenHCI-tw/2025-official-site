@@ -6,6 +6,26 @@ export default function Hero() {
       className="relative w-full text-white overflow-hidden"
       style={{ height: "calc(100vh - var(--nav-height))" }}
     >
+      <div className="absolute top-0 left-1/2 transform -translate-x-[50%] -translate-y-[68%] z-10 pointer-events-none w-[250%]">
+        <Image
+          src="/hero/ellipse.png"
+          alt="ellipse"
+          width={2212}
+          height={349}
+          className="w-full h-auto"
+        />
+      </div>
+
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-[50%] translate-y-[68%] z-10 pointer-events-none w-[250%]">
+        <Image
+          src="/hero/ellipse.png"
+          alt="ellipse"
+          width={2212}
+          height={349}
+          className="w-full h-auto"
+        />
+      </div>
+
       <div className="absolute inset-0 bg-cover bg-[right_-20px_top] z-0">
         <Image
           // src={"/hero/底圖.jpg"}
