@@ -36,9 +36,9 @@ export default function Stones({
   stoneCount = 10,
   imageUrls = [],
   minVelocity = 0.25,
-  maxVelocity = 1.5,
+  maxVelocity = 1,
   margin = 20,
-  stoneSize = [30, 100],
+  stoneSize = [50, 150],
   bounceDelta = 1.5,
   jitterDelta = 0.5,
 }: StonesProps) {

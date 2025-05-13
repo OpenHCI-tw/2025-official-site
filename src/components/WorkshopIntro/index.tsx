@@ -19,12 +19,12 @@ export default function WorkshopIntro() {
               主題介紹
             </h3>
             <Image
-              src="/workshopIntro/工作坊介紹_new.svg"
+              src="/workshopIntro/工作坊介紹.png"
               alt="topics"
               width={796}
               height={200}
               // className="brightness-45"
-              className="w-full h-auto mb-4 mix-blend-multiply brightness-40"
+              className="w-full h-auto mb-4  "
             />
 
             <p className="">

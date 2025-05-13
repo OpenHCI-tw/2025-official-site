@@ -11,8 +11,19 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full text-white pt-10 pb-10 px-5 md:px-10 flex items-center justify-between bg-black h-[var(--nav-height)]">
       {/* Navbar */}
 
-      <a href="#" className="text-3xl">
-        OpenHCI&apos;25
+      <a
+        href="#"
+        className="text-3xl relative w-[120px] h-[20px] md:w-[150px] md:h-[30px]"
+      >
+        {/* OpenHCI&apos;25 */}
+        <Image
+          src="/Navbar圖片/OpenHCI’25.svg"
+          // width={117}
+          // height={17}
+          fill
+          className=""
+          alt="OpenHCI’25"
+        />
       </a>
       <a
         href="#"
