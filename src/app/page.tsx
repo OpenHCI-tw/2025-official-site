@@ -10,6 +10,7 @@ import ActivityInfo from "@/components/ActivityInfo";
 import Speakers from "@/components/Speakers";
 import AnimatedSection from "@/components/AnimatedSection";
 import Faq from "@/components/Faq";
+import PreviousWorks from "@/components/PreviousWorks";
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
           id="past-work"
         >
           <NumberTitle number={4}>往年作品成果</NumberTitle>
+          <PreviousWorks />
         </section>
 
         <section
