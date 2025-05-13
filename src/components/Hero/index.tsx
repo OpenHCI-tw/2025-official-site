@@ -12,6 +12,7 @@ export default function Hero() {
           alt="ellipse"
           width={2212}
           height={349}
+          quality={50}
           className="w-full h-auto"
         />
       </div>
@@ -57,8 +58,8 @@ export default function Hero() {
             立即報名
           </button>
           <div className="text-white text-[28px] leading-relaxed mt-3 mb-12 tracking-[0.1em]">
-            <p>06/21–06/22</p>
-            <p>07/03–07/06</p>
+            <p>06/28–06/29</p>
+            <p>07/17–07/20</p>
           </div>
         </div>
       </div>

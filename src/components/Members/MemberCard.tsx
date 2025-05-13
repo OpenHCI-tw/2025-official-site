@@ -23,6 +23,7 @@ export default function MemberCard({ member, department }: MemberCardProps) {
           alt={member.name}
           fill
           className="object-cover object-[50%_10%]"
+          priority
         />
         <div className="name absolute bg-orange right-0 bottom-0 p-1.5 text-xl text-white">
           {member.name}
