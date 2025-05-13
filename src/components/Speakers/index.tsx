@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import speakersJson from "@/data/speakers.json";
 import GroupTag from "./GroupTag";
 import NewSpeakerCard from "./NewSpeakerCard";
@@ -25,8 +25,18 @@ export default function Speakers() {
     };
   };
 
+  // ✅ 預先載入所有圖片
+  useEffect(() => {
+    Object.entries(speakersData).forEach(([group, speakers]) => {
+      speakers.forEach((speaker) => {
+        const img = new Image();
+        img.src = `/老師照片/${group}/${group} ${speaker.name}.png`;
+      });
+    });
+  }, []);
+
   return (
-    <div className="grid gap-11 w-full px-8 md:px-20">
+    <div className="grid gap-11 w-full px-8 md:px-30">
       <div className="departments flex flex-wrap justify-center gap-3 pb-8">
         {groups.map((name, index) => {
           const isActive = index === current;
