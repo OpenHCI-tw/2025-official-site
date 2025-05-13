@@ -19,7 +19,7 @@ export default function Home() {
       <section className="">
         <Hero />
       </section>
-      <main className="flex flex-col gap-8 mb-8 bg-linear-(--gradient-mobile) md:bg-linear-(--gradient-desktop)">
+      <main className="flex flex-col gap-8  bg-linear-(--gradient-mobile) md:bg-linear-(--gradient-desktop)">
         <section className=" flex flex-col items-center justify-center py-20  scroll-mt-[var(--nav-height)]  bg-linear-(--gradient-intro)">
           <Intro />
         </section>
@@ -42,13 +42,17 @@ export default function Home() {
         </section>
         {/* </AnimatedSection> */}
 
-        <section
-          className="  flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]"
+        <NumberTitle number={3}>講座陣容</NumberTitle>
+
+        <AnimatedSection
+          className=" flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)]"
           id="speaker-info"
+          baseClass="fade-in-start"
+          animationClass="fade-in-end"
+          once={false}
         >
-          <NumberTitle number={3}>講座陣容</NumberTitle>
           <Speakers />
-        </section>
+        </AnimatedSection>
 
         <section
           className="  flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]"

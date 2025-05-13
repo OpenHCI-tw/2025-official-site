@@ -26,7 +26,7 @@ export default function Speakers() {
   };
 
   return (
-    <div className="grid gap-11 w-full px-8">
+    <div className="grid gap-11 w-full px-8 md:px-20">
       <div className="departments flex flex-wrap justify-center gap-3 pb-8">
         {groups.map((name, index) => {
           const isActive = index === current;
