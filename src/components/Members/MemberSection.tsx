@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import teamMembersJson from "@/data/teamMembers.json";
 import DepartmentTag from "./DepartmentTag";
 import NewMemberCard from "./NewMemberCard";
+
 type Member = {
   name: string;
   school: string;
@@ -21,8 +22,17 @@ export default function MemberSection() {
   const departments: string[] = Object.keys(teamMembers);
   const [current, setCurrent] = useState<number>(0);
   const team: string = departments[current];
-
   const [members, setMembers] = useState<Member[]>(teamMembers[team]);
+
+  // ✅ 預先載入所有圖片
+  useEffect(() => {
+    Object.entries(teamMembers).forEach(([department, members]) => {
+      members.forEach((member) => {
+        const img = new Image();
+        img.src = `/幹部照片/${department}部/${department} ${member.name}.png`;
+      });
+    });
+  }, []);
 
   const handleSelect = (index: number): (() => void) => {
     return () => {
@@ -51,14 +61,13 @@ export default function MemberSection() {
       {/* 成員卡片區 */}
       <div
         key={current}
-        className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center "
+        className="grid grid-cols-[repeat(auto-fit,_minmax(150px,_250px))] gap-[19px] w-full justify-center"
       >
         {members.map((member, i) => (
           <NewMemberCard
-            key={`${team}-${member.name}-${i}`}
+            key={member.name}
             member={member}
             department={team}
-            className=""
             index={i}
           />
         ))}
