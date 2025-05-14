@@ -10,7 +10,8 @@ import ActivityInfo from "@/components/ActivityInfo";
 import Speakers from "@/components/Speakers";
 import AnimatedSection from "@/components/AnimatedSection";
 import Faq from "@/components/Faq";
-import PreviousWorks from "@/components/PreviousWorks";
+// import PreviousWorks from "@/components/PreviousWorks";
+import Carousel from "@/components/PreviousWorks/Carosoul";
 
 export default function Home() {
   return (
@@ -42,24 +43,34 @@ export default function Home() {
         </section>
         {/* </AnimatedSection> */}
 
-        <NumberTitle number={3}>講座陣容</NumberTitle>
-
-        <AnimatedSection
-          className=" flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)]"
-          id="speaker-info"
-          baseClass="fade-in-start"
-          animationClass="fade-in-end"
-          once={false}
-        >
-          <Speakers />
-        </AnimatedSection>
-
-        <section
-          className="  flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]"
+        <section>
+          <NumberTitle number={3}>講座陣容</NumberTitle>
+          <AnimatedSection
+            className=" flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)]"
+            id="speaker-info"
+            baseClass="fade-in-start"
+            animationClass="fade-in-end"
+            threshold={0}
+            once={true}
+          >
+            <Speakers />
+          </AnimatedSection>
+        </section>
+        {/* <section
+          className=" flex flex-col items-center justify-center py-20 px-8 scroll-mt-[var(--nav-height)]"
           id="past-work"
         >
           <NumberTitle number={4}>往年作品成果</NumberTitle>
           <PreviousWorks />
+        </section> */}
+
+        <section
+          className="flex flex-col items-center justify-center py-20 px-0 scroll-mt-[var(--nav-height)]"
+          id="past-work"
+        >
+          <NumberTitle number={4}>往年作品成果</NumberTitle>
+
+          <Carousel />
         </section>
 
         <section
@@ -77,7 +88,7 @@ export default function Home() {
           id="team-info"
           baseClass="fade-in-start"
           animationClass="fade-in-end"
-          once={false}
+          once={true}
         >
           <MemberSection />
         </AnimatedSection>

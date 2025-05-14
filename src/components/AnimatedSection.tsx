@@ -16,7 +16,7 @@ type AnimatedSectionProps = {
 export default function AnimatedSection({
   children,
   id,
-  threshold = 0.1,
+  threshold = 0.2,
   className = "",
   animationClass = "fade-in-end",
   baseClass = "fade-in-start",

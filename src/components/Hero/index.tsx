@@ -31,7 +31,7 @@ export default function Hero() {
           // src={"/hero/底圖.jpg"}
           src={"/hero/底圖壓縮.jpg"}
           fill
-          // sizes="100%"
+          sizes="100vw"
           objectFit="cover"
           alt="底圖"
         />

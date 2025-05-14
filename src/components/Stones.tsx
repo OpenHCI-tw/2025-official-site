@@ -234,7 +234,7 @@ export default function Stones({
       ref={containerRef}
       className="absolute inset-0 overflow-hidden bg-transparent pointer-events-none z-10"
       onMouseMove={handleMouseMove}
-      onTouchStart={handleTouchMove}
+      // onTouchStart={handleTouchMove}
       // style={{ touchAction: "none" }}
     >
       {stones.map((stone) => (
@@ -263,6 +263,7 @@ export default function Stones({
               filter: stone.isInteracting
                 ? "brightness(0.8) hue-rotate(30deg)"
                 : "brightness(1)",
+              touchAction: "none",
             }}
           />
         </div>
