@@ -219,15 +219,15 @@ export default function Stones({
     handlePointerMove(mouseX, mouseY);
   };
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
-    if (e.touches.length > 0) {
-      const touch = e.touches[0];
-      const rect = containerRef.current!.getBoundingClientRect();
-      const touchX = touch.clientX - rect.left;
-      const touchY = touch.clientY - rect.top;
-      handlePointerMove(touchX, touchY);
-    }
-  };
+  // const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+  //   if (e.touches.length > 0) {
+  //     const touch = e.touches[0];
+  //     const rect = containerRef.current!.getBoundingClientRect();
+  //     const touchX = touch.clientX - rect.left;
+  //     const touchY = touch.clientY - rect.top;
+  //     handlePointerMove(touchX, touchY);
+  //   }
+  // };
 
   return (
     <div

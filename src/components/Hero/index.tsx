@@ -31,8 +31,8 @@ export default function Hero() {
           // src={"/hero/底圖.jpg"}
           src={"/hero/底圖壓縮.jpg"}
           fill
-          sizes="100vw"
-          objectFit="cover"
+          // sizes="100"
+          className="object-cover"
           alt="底圖"
         />
       </div>
