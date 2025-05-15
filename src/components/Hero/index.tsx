@@ -30,7 +30,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-cover bg-[right_-20px_top] z-0">
         <Image
-          src={"/hero/background.jpg"}
+          src={"/hero/background-345.jpg"}
           fill
           className="object-cover md:object-right"
           alt="底圖"

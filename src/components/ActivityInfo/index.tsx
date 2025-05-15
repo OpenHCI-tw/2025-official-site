@@ -41,7 +41,7 @@ export default function ActivityInfo() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60 scrollbar-hidden  pointer-events-auto pb-6">
+        <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60   pointer-events-auto pb-6 custom-scrollbar">
           <InfoCard
             name="前置工作坊"
             date="6/28 (六)"
@@ -108,12 +108,7 @@ export default function ActivityInfo() {
 
       <AnimatedSection threshold={0.5}>
         <div className="mt-16 md:max-w-[864px] px-10 mx-auto">
-          <h4
-            className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-1 after:w-full after:bg-white"
-            style={{ textShadow: "0px 4px 5px #00000040" }}
-          >
-            招生日程
-          </h4>
+          <Title text=" 招生日程" />
           <div className="w-full max-w-[800px] mx-auto px-0 md:px-4 mt-16">
             <div className="relative w-full origin-top-left scale-100 sm:scale-95 xs:scale-[0.85]">
               <div className="absolute top-[13px] left-0 right-0 h-[12px] scale-y-50 md:scale-y-100 bg-gradient-to-r from-transparent via-white to-transparent z-0" />
