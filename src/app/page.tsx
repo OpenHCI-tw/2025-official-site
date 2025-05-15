@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <div className="">
       <Navbar />
-      <section className="">
-        <Hero />
-      </section>
+      {/* <section className=""> */}
+      <Hero />
+      {/* </section> */}
       <main className="flex flex-col gap-8  bg-linear-(--gradient-mobile) md:bg-linear-(--gradient-desktop)">
         <section className=" flex flex-col items-center justify-center py-20  scroll-mt-[var(--nav-height)]  bg-linear-(--gradient-intro)">
           <Intro />

@@ -6,7 +6,7 @@ export default function Hero() {
       className="relative w-full text-white overflow-hidden"
       style={{ height: "calc(100vh - var(--nav-height))" }}
     >
-      <div className="absolute top-0 left-1/2 transform -translate-x-[50%] -translate-y-[68%] z-10 pointer-events-none w-[250%]">
+      <div className="absolute top-0 left-1/2 transform -translate-x-[50%] -translate-y-[72%] z-10 pointer-events-none w-[250%]">
         <Image
           src="/hero/ellipse.png"
           alt="ellipse"
@@ -32,13 +32,13 @@ export default function Hero() {
           src={"/hero/底圖壓縮.jpg"}
           fill
           // sizes="100"
-          className="object-cover"
+          className="object-cover md:object-right"
           alt="底圖"
         />
       </div>
 
-      <div className="relative z-10 flex flex-col px-6 py-8 h-full justify-center md:justify-between md:items-stretch md:ml-12 md:mt-12">
-        <div className="flex flex-col flex-1 mt-12 md:self-start">
+      <div className="relative z-10 flex flex-col px-6 py-8 h-full justify-center md:justify-between md:items-stretch md:ml-12 md:mt-0">
+        <div className="flex flex-col flex-1 mt-20 md:self-start">
           <div className="text-center md:text-left md:text-2xl font-medium mb-6">
             第十五屆人機互動工作坊
           </div>
@@ -51,7 +51,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="mt-8 md:mt-0 flex flex-col items-center md:items-end md:self-end text-center md:text-right md:mr-12 md:mb-12">
+        <div className="mt-8 md:-mt-10 flex flex-col items-center md:items-end md:self-end text-center md:text-right md:mr-12 md:mb-12 z-30">
           <button className="w-[88px] h-[88px] md:w-[124px] md:h-[124px] bg-[var(--ORANGE)] text-white text-[16px] md:text-2xl font-bold text-nowrap  rounded-full mb-4 hover:bg-[#F25926] shadow-[0px_8px_12px_0px_#00000040] tracking-[0.1em]">
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSfubYcNe1OtjyfXFsqUf8HM5RTwOiUzNjrryfmCTlJgkyzvBg/viewform?usp=dialog"
