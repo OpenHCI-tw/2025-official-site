@@ -12,6 +12,7 @@
 
   --gradient-desktop: to top, #484848 0.05%, #D34F22 83.62%, #9C9C9C 99.95%;
 
+
   --gradient-mobile: to top, #000000 0.05%, #7C361E 66.58%, #D45F38 90.8%, #9C9C9C 99.95%;
 
   /* --gradient-desktop: linear-gradient(0.05deg,
@@ -153,7 +154,7 @@ html {
 
 
 .custom-scrollbar::-webkit-scrollbar {
-  height: 8px;
+  height: 12px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {

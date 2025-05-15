@@ -35,7 +35,7 @@ export default function Home() {
 
         {/* <AnimatedSection rootMargin="-120px"> */}
         <section
-          className="  flex flex-col items-center justify-center py-20 px-0 scroll-mt-[var(--nav-height)]"
+          className="  flex flex-col items-center justify-center py-20 px-0 scroll-mt-[var(--nav-height)] px-8 md:px-0"
           id="activity-info"
         >
           <NumberTitle number={2}>活動資訊</NumberTitle>
@@ -46,7 +46,7 @@ export default function Home() {
         <section>
           <NumberTitle number={3}>講座陣容</NumberTitle>
           <AnimatedSection
-            className=" flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)]"
+            className=" flex flex-col items-center justify-center py-20 scroll-mt-[var(--nav-height)] "
             id="speaker-info"
             baseClass="fade-in-start"
             animationClass="fade-in-end"

@@ -41,7 +41,7 @@ export default function ActivityInfo() {
       </AnimatedSection>
 
       <AnimatedSection>
-        <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60   pointer-events-auto pb-6 custom-scrollbar">
+        <div className="my-22 py-2 flex gap-4 overflow-x-auto px-10 md:px-60   pointer-events-auto pb-10 custom-scrollbar max-w-200 mx-auto ">
           <InfoCard
             name="前置工作坊"
             date="6/28 (六)"
