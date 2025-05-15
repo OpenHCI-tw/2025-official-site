@@ -35,7 +35,7 @@ export default function ActivityInfo() {
             <span className="text-[16px] self-start md:self-auto">
               正式工作坊
             </span>
-            <span className="">2025/7/17 (四) - 07/20 (日) </span>
+            <span className="">2025/07/17 (四) - 07/20 (日) </span>
           </div>
         </div>
       </AnimatedSection>
