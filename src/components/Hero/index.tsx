@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div
-      className="relative w-full text-white overflow-hidden"
+      className="relative w-full text-white overflow-hidden bg-black"
       style={{ height: "calc(100vh - var(--nav-height))" }}
     >
       <div className="absolute top-0 left-1/2 transform -translate-x-[50%] -translate-y-[72%] z-10 pointer-events-none w-[250%]">
@@ -28,7 +28,7 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-cover bg-[right_-20px_top] z-0">
         <Image
-          src={"/hero/底圖壓縮.jpg"}
+          src={"/hero/background.jpg"}
           fill
           className="object-cover md:object-right"
           alt="底圖"
