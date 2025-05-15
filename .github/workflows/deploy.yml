@@ -20,4 +20,4 @@ jobs:
           deploy_key: ${{ secrets.SSH_PRIVATE_KEY }}
           publish_branch: gh-pages
           publish_dir: ./out
-          cname: 2025-staging.openhci.com
+          cname: www.2025.openhci.com
