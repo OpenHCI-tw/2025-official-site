@@ -28,10 +28,8 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-cover bg-[right_-20px_top] z-0">
         <Image
-          // src={"/hero/底圖.jpg"}
           src={"/hero/底圖壓縮.jpg"}
           fill
-          // sizes="100"
           className="object-cover md:object-right"
           alt="底圖"
         />
