@@ -29,13 +29,13 @@ export default function Hero() {
       </div>
 
       <div className="absolute inset-0 bg-cover bg-[right_-20px_top] z-0">
-        {/* <Image
+        <Image
           src={"/hero/background.jpg"}
           fill
           className="object-cover md:object-right"
           alt="底圖"
           priority
-        /> */}
+        />
       </div>
 
       <div className="relative z-10 flex flex-col px-6 py-8 h-full justify-center md:justify-between md:items-stretch md:ml-12 md:mt-0">
