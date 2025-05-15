@@ -1,6 +1,21 @@
 import AnimatedSection from "../AnimatedSection";
 import infoData from "@/data/infoBlock.json";
 
+type TitleProps = {
+  text: string;
+};
+
+function Title({ text }: TitleProps) {
+  return (
+    <h3
+      className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-full after:bg-gradient-to-r after:from-white after:to-transparent"
+      style={{ textShadow: "0px 4px 5px #00000040" }}
+    >
+      {text}
+    </h3>
+  );
+}
+
 export default function ActivityInfo() {
   return (
     <div className="text-white py-16 mx-auto w-full z-20 pointer-events-none tracking-[1.6px]">
@@ -9,12 +24,7 @@ export default function ActivityInfo() {
         animationClass="slide-in-left-end"
       >
         <div className="flex flex-col gap-3 mx-auto md:max-w-[864px] px-10 animate-fadeInLeft">
-          <h3
-            className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-0.5 after:w-full after:bg-gradient-to-r after:from-white after:to-transparent"
-            style={{ textShadow: "0px 4px 5px #00000040" }}
-          >
-            日程
-          </h3>
+          <Title text="日程" />
           <div className="relative flex justify-between text-sm after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30 h-[44px] items-end">
             <span className="text-[16px] self-start md:self-auto">
               前置工作坊
@@ -149,12 +159,7 @@ function InfoCard({
 function InfoBlock({ title, content }: { title: string; content: string }) {
   return (
     <div>
-      <h4
-        className="relative text-2xl font-medium mb-2 after:content-[''] after:absolute after:left-0 after:-bottom-2 after:h-1 after:w-full after:bg-white"
-        style={{ textShadow: "0px 4px 5px #00000040" }}
-      >
-        {title}
-      </h4>
+      <Title text={title} />
       <p className="mt-4 leading-6 tracking-[1.6px]">{content}</p>
     </div>
   );
