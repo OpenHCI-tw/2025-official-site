@@ -13,6 +13,7 @@ export default function Hero() {
           width={2212}
           height={349}
           className="w-full h-auto"
+          priority
         />
       </div>
 
@@ -23,6 +24,7 @@ export default function Hero() {
           width={2212}
           height={349}
           className="w-full h-auto"
+          priority
         />
       </div>
 
@@ -32,6 +34,7 @@ export default function Hero() {
           fill
           className="object-cover md:object-right"
           alt="底圖"
+          priority
         />
       </div>
 
@@ -46,6 +49,7 @@ export default function Hero() {
             width={350}
             height={106}
             className="w-full md:w-[642.2px] mx-auto"
+            priority
           />
         </div>
 
