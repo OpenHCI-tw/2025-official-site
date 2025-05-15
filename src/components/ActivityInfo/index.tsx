@@ -23,7 +23,7 @@ export default function ActivityInfo() {
         baseClass="slide-in-left-start"
         animationClass="slide-in-left-end"
       >
-        <div className="flex flex-col gap-3 mx-auto md:max-w-[864px] px-10 animate-fadeInLeft">
+        <div className="flex flex-col gap-3 mx-auto md:max-w-[864px] px-0 animate-fadeInLeft">
           <Title text="日程" />
           <div className="relative flex justify-between text-sm after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-full after:bg-white after:opacity-30 h-[44px] items-end">
             <span className="text-[16px] self-start md:self-auto">
@@ -93,7 +93,7 @@ export default function ActivityInfo() {
         </div>
       </AnimatedSection>
 
-      <div className="flex flex-col gap-20 mx-auto leading-relaxed md:max-w-[864px] px-10">
+      <div className="flex flex-col gap-20 mx-auto leading-relaxed md:max-w-[864px] px-0">
         {infoData.map((item, index) => (
           <AnimatedSection
             threshold={0.5}
@@ -107,7 +107,7 @@ export default function ActivityInfo() {
       </div>
 
       <AnimatedSection threshold={0.5}>
-        <div className="mt-16 md:max-w-[864px] px-10 mx-auto">
+        <div className="mt-16 md:max-w-[864px] px-0 mx-auto">
           <Title text=" 招生日程" />
           <div className="w-full max-w-[800px] mx-auto px-0 md:px-4 mt-16">
             <div className="relative w-full origin-top-left scale-100 sm:scale-95 xs:scale-[0.85]">

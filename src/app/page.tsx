@@ -35,7 +35,7 @@ export default function Home() {
 
         {/* <AnimatedSection rootMargin="-120px"> */}
         <section
-          className="  flex flex-col items-center justify-center py-20 px-0 scroll-mt-[var(--nav-height)] px-8 md:px-0"
+          className="  flex flex-col items-center justify-center py-20  scroll-mt-[var(--nav-height)] px-10 md:px-0"
           id="activity-info"
         >
           <NumberTitle number={2}>活動資訊</NumberTitle>
