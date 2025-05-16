@@ -49,7 +49,7 @@ export default function ActivityInfo() {
               "晶創人文介紹",
               "HCI介紹",
               "TA HiLight!",
-              "演講 : 梁榮輝",
+              "演講 : 梁容輝",
               "演講 : 孔博雯",
               "Workshop Orientation",
             ]}
