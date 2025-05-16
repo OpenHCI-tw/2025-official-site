@@ -40,7 +40,7 @@ export default function ScrollArea() {
       name: "前置工作坊",
       date: "6/29 (日)",
       list: [
-        "Arduino/推測設計與腦力風暴 (選修）",
+        "Arduino / 推測設計與腦力風暴 (選修）",
         "XR 論壇 / AI 論壇 (選修）",
         "顧問交流",
         "TouchDesigner / 社會科學研究方法 (選修）",
