@@ -66,12 +66,12 @@ export default function ActivityInfo() {
           />
           <InfoCard
             name="正式工作坊"
-            date="7/17 (日)"
+            date="7/17 (四)"
             list={["演講 : 曾元琦", "必選修課程", "期中提案", "學員討論"]}
           />
           <InfoCard
             name="正式工作坊"
-            date="7/18 (日)"
+            date="7/18 (五)"
             list={["演講 : 吳哲宇", "留學分享 : 洪鵬凱", "學員討論"]}
           />
           <InfoCard
