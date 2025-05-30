@@ -115,7 +115,7 @@ export default function ActivityInfo() {
 
               <div className="grid grid-cols-4 gap-2 z-10 text-center">
                 <Step date="5/16" label="報名開始" />
-                <Step date="5/28" label="報名結束" />
+                <Step date="5/31" label="報名結束 (已延長)" />
                 <Step date="6/11" label="錄取名單公布" />
                 <Step date="6/14" label="遞補備取通知" />
               </div>
