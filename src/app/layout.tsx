@@ -4,7 +4,6 @@ import "./globals.css";
 
 import localFont from "next/font/local";
 import Stones from "@/components/Stones";
-// import Stones from "@/components/Stones";
 
 const baunk = localFont({
   src: "./fonts/Baunk.ttf",
@@ -32,11 +31,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "OpenHCI 2025",
+    url: "https://2025.openhci.com",
+  };
+
   return (
     <html lang="zh-Hant">
       <body
         className={`${baunk.variable} ${notoSansTc.variable} antialiased relative overflow-x-hidden`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <Stones />
         {children}
       </body>
